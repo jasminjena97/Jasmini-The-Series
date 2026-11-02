@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+  base: '/Jasmini-The-Series/',
   plugins: [react(), tailwindcss()],
   build: {
     target: 'es2020',
