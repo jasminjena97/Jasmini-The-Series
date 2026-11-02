@@ -1,64 +1,109 @@
 /**
- * Central portfolio data — generated from Sushmita's resume (Sushmita_dasari.pdf).
- * Every fact on the site comes from this file. Update it here and the whole site follows.
- * Nothing here should be added unless it appears on the resume.
+ * Central portfolio data — generated from Jasmini Jena's resume.
+ * Every factual claim on the site should come from this file.
  */
 
 export type Palette = { from: string; via: string; to: string; accent: string };
 
 export const profile = {
-  fullName: 'Dasari Venkata Ratna Sri Sushmita',
-  displayName: 'Sushmita Dasari',
-  firstName: 'SUSHMITA',
+  fullName: 'Jasmini Jena',
+  displayName: 'Jasmini Jena',
+  firstName: 'JASMINI',
   seriesTag: 'THE SERIES',
-  /** Fictional studio card shown at the very start of the opening sequence. */
-  originalLabel: 'A DASARI ORIGINAL',
-  role: 'Full-Stack Developer',
-  tagline: ['Full-Stack Developer', 'AI / ML', 'Java'],
+  originalLabel: 'A JASMINI ORIGINAL',
+  role: 'AWS DevOps Engineer',
+  tagline: ['AWS DevOps Engineer', 'Cloud Migration', 'Agentic Automation'],
   intro:
-    'A B.Tech Artificial Intelligence & Machine Learning student (CGPA 9.10) and full-stack developer building AI-powered platforms, payment systems and multi-tenant SaaS with Java, Python, React, Node.js and Docker.',
-  location: 'Surampalem, Andhra Pradesh',
-  email: 'sushmitadasari17@gmail.com',
+    'AWS DevOps Engineer with 5+ years of experience designing, automating, deploying and supporting scalable cloud infrastructure and production platforms across AWS, Terraform, Kubernetes, CI/CD and AI-assisted DevOps.',
+  location: 'Hyderabad, Telangana',
+  phone: '7064220366',
+  email: 'jasminjena97@gmail.com',
+  experienceYears: '5+',
   links: {
-    linkedin: 'https://www.linkedin.com/in/sushmita-dasari-227a40284/',
-    github: 'https://github.com/Sushmitadasari',
+    linkedin: 'https://www.linkedin.com/in/jasmini-jena',
   },
-  resumePdf: '/assets/Sushmita_Dasari_Resume.pdf',
+  resumePdf: '/assets/Jasmini_Jena_Resume.pdf',
   portrait: {
-    src: '/assets/portrait-720.webp',
+    src: '/assets/portrait-1100.webp',
     srcSet: '/assets/portrait-420.webp 420w, /assets/portrait-720.webp 720w, /assets/portrait-1100.webp 1100w',
-    alt: 'Portrait of Sushmita Dasari',
+    alt: 'Jasmini Jena',
   },
-  interests: ['System Design', 'Cloud Computing (AWS)', 'Machine Learning'],
+  interests: ['Cloud Migration', 'Platform Engineering', 'AI-Assisted DevOps'],
 };
 
 export const education = [
   {
-    school: 'Aditya Engineering College',
-    place: 'Surampalem',
-    degree: 'Bachelor of Technology — Artificial Intelligence and Machine Learning',
-    period: 'October 2023 – Present',
-    score: 'CGPA 9.10',
-  },
-  {
-    school: 'Sri Chaitanya Junior College',
-    place: 'Kakinada',
-    degree: 'BIEAP — MPC',
-    period: 'June 2021 – May 2023',
-    score: 'Score 925/1000',
+    school: 'Biju Patnaik University of Technology',
+    place: 'Odisha',
+    degree: 'B.Tech — Electronics and Telecommunication Engineering',
+    period: '2020',
   },
 ];
 
 export const experience = [
   {
-    company: 'Technical Hub Pvt Ltd',
-    role: 'Trainee',
-    place: 'Surampalem, AP',
-    period: 'May 2025 – June 2026',
+    company: 'EPAM Systems',
+    role: 'DevOps Engineer',
+    place: 'Hyderabad, India',
+    period: 'January 2026 – Present',
     points: [
-      'Completed one year of intensive Full-Stack Development (FSD) training covering frontend, backend, database integration, and deployment workflows.',
-      'Developed responsive and functional web applications by implementing user interfaces, server-side logic, and database connectivity.',
-      'Deployed and managed web applications while applying version control, debugging, and end-to-end development practices.',
+      'Built an automated Azure-to-AWS and VMware-to-AWS migration engine using GitHub Actions, AWS Step Functions, Lambda, EventBridge, DynamoDB and AWS MGN.',
+      'Provisioned migration infrastructure with Terraform, including IAM, DynamoDB, EventBridge, Lambda and Step Functions.',
+      'Designed automated migration runbooks covering source preparation, MGN agent installation, replication, validation, cutover, post-migration verification and rollback.',
+      'Automated source VM preparation and AWS MGN agent installation using PowerShell and Bash through Azure Run Command, WinRM, SSH and AWS Systems Manager.',
+      'Implemented Step Functions orchestration for sequential migration execution, readiness checks, reboot handling, validation and SSM-based post-migration operations.',
+      'Built Lambda-based validation and execution workflows using Python, DynamoDB and CloudWatch for migration status tracking and failure handling.',
+      'Designed East-West and Firewall-19 connectivity requirements by analyzing application flows, IPs, subnet CIDRs, ports, protocols and network paths.',
+      'Created migration architecture and operational documentation covering SIG, target AWS architecture, methodology, validation, cutover, rollback and hypercare.',
+      'Worked on enterprise cloud migration automation with focus on repeatability, idempotency, production reliability and operational visibility.',
+      'Architected an AI-driven CI/CD modernization platform using Model Context Protocol and specialized AI agents to analyze Jenkinsfiles and automate migration to GitHub Actions and GitLab CI.',
+      'Implemented agent-driven analysis, validation and remediation workflows to identify CI/CD migration blockers before code changes are committed.',
+    ],
+  },
+  {
+    company: 'Zen3 IT Solutions',
+    role: 'DevOps Engineer',
+    place: 'India',
+    period: 'April 2024 – January 2026',
+    points: [
+      'Designed and maintained CI/CD pipelines for Dev, UAT and Production environments using Jenkins and Bitbucket Pipelines.',
+      'Built and deployed containerized applications using Docker, with images stored in Amazon ECR.',
+      'Deployed and operated production workloads on Amazon EKS with Kubernetes-based orchestration, scaling and fault-tolerant deployments.',
+      'Configured Apache Kafka brokers behind Network Load Balancers for high-throughput data ingestion from external providers.',
+      'Integrated Logstash and Elasticsearch for data processing, indexing and application data retrieval.',
+      'Implemented secure runtime secret retrieval using AWS Secrets Manager for payment-related application components.',
+      'Deployed production observability using Site24x7 and Datadog, contributing to 99.9% application uptime.',
+      'Performed AWS infrastructure optimization and instance rightsizing, achieving approximately 10–15% AWS cost reduction.',
+      'Troubleshot production infrastructure, application, networking, deployment and Kubernetes issues and performed root cause analysis.',
+      'Managed Linux environments, Docker workloads, CI/CD pipelines and AWS cloud infrastructure across multiple environments.',
+    ],
+  },
+  {
+    company: 'Cigniti Technologies',
+    role: 'DevOps Engineer',
+    place: 'India',
+    period: 'March 2022 – September 2023',
+    points: [
+      'Containerized microservices using Docker and deployed workloads on Amazon ECS and Amazon EKS.',
+      'Designed and implemented Kubernetes observability using Istio, Prometheus and Grafana.',
+      'Automated application deployments using Jenkins, GitHub Actions and AWS CodeDeploy.',
+      'Managed Amazon Route 53 configurations for latency-based and failover routing.',
+      'Administered Linux and Windows Server environments and application/web servers including Apache, NGINX and IIS.',
+      'Integrated Jira and Bitbucket to streamline source-code management and issue-tracking workflows.',
+      'Supported production deployments, troubleshooting, infrastructure monitoring and operational activities across cloud environments.',
+    ],
+  },
+  {
+    company: 'Amazon',
+    role: 'DevOps Intern',
+    place: 'India',
+    period: 'August 2021 – March 2022',
+    points: [
+      'Automated AWS infrastructure deployment using AWS CloudFormation and AWS CLI.',
+      'Designed EC2-based architectures with focus on high availability, security and operational reliability.',
+      'Developed and deployed AWS Lambda functions for cloud automation.',
+      'Built monitoring dashboards using Prometheus and Grafana.',
+      'Conducted technical knowledge-sharing and mentoring sessions for team members.',
     ],
   },
 ];
@@ -75,7 +120,6 @@ export type Project = {
   build: string[];
   features: string[];
   metrics: Metric[];
-  /** Omit when the repository isn't public — the GitHub button is hidden instead of linking to a 404. */
   github?: string;
   palette: Palette;
   motif: 'shield' | 'flow' | 'tenants';
@@ -83,89 +127,37 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: 'policyguard-ai',
-    title: 'PolicyGuard AI',
-    year: '2026',
-    genre: 'AI • NLP • LLM',
-    logline: 'An AI-powered policy analysis platform across web, browser extension, mobile and desktop applications.',
-    stack: ['Python', 'NLP', 'LLM', 'REST API'],
+    id: 'dynamic-teletex',
+    title: 'Dynamic Teletex',
+    year: 'AWS Platform',
+    genre: 'Travel • Cloud • Microservices',
+    logline: 'A scalable AWS-based travel and booking platform powered by containerized microservices and real-time data pipelines.',
+    stack: ['AWS EKS', 'Docker', 'Kafka', 'Elasticsearch', 'RabbitMQ'],
     build: [
-      'Built an AI-powered policy analysis platform across web, browser extension, mobile, and desktop applications, processing 500+ policy documents with 92% accuracy and reducing manual review time by 60% across 8 policy categories.',
-      'Engineered LLM-based Q&A, key-information extraction, and REST API integration for 10+ document types, enabling real-time policy insights and reducing decision turnaround time by 45%.',
+      'Developed and supported a scalable travel and booking platform using Amazon EKS and Docker-based microservices.',
+      'Built Kafka-based real-time data pipelines behind an NLB for ingestion from external hotel and flight providers.',
+      'Configured Logstash to process application and provider data and integrate with Elasticsearch for structured search and retrieval.',
+      'Implemented RabbitMQ for inter-service asynchronous communication and Strapi CMS for dynamic content management.',
+      'Integrated AWS Secrets Manager to securely retrieve and decrypt sensitive payment-related information at runtime.',
+      'Automated application delivery using Bitbucket Pipelines through a build → ECR → EKS deployment workflow.',
+      'Implemented zero-downtime deployment practices, global delivery with CloudFront, Route 53 and Cloudflare, and monitoring with Site24x7.',
     ],
     features: [
-      'LLM-based Q&A over policy documents',
-      'Key-information extraction',
-      'REST API integration for 10+ document types',
-      'Web, browser extension, mobile & desktop apps',
-      'Real-time policy insights',
+      'AWS EKS microservices platform',
+      'Kafka ingestion behind an NLB',
+      'Logstash and Elasticsearch search pipeline',
+      'RabbitMQ asynchronous communication',
+      'Bitbucket Pipelines to ECR to EKS delivery',
+      'Zero-downtime deployments',
     ],
     metrics: [
-      { value: '500+', label: 'policy documents processed' },
-      { value: '92%', label: 'accuracy' },
-      { value: '60%', label: 'less manual review time' },
-      { value: '45%', label: 'faster decision turnaround' },
-      { value: '8', label: 'policy categories' },
+      { value: '99.9%', label: 'application uptime' },
+      { value: 'EKS', label: 'production orchestration' },
+      { value: 'Kafka', label: 'real-time ingestion' },
+      { value: '10–15%', label: 'AWS cost reduction' },
     ],
-    // The resume links to https://github.com/Sushmitadasari/PolicyGuard-AI, which is not public yet (404).
-    // Add `github: 'https://github.com/Sushmitadasari/PolicyGuard-AI',` back once the repo is public.
-    palette: { from: '#2a0610', via: '#7a0f24', to: '#0b0710', accent: '#ff3d5a' },
-    motif: 'shield',
-  },
-  {
-    id: 'payment-gateway',
-    title: 'Payment Gateway System',
-    year: '2026',
-    genre: 'Full-Stack • Fintech • Microservices',
-    logline: 'A full-stack UPI & card payment gateway built around a strict payment state machine.',
-    stack: ['Node.js', 'Express', 'PostgreSQL', 'React', 'Docker'],
-    build: [
-      'Built full-stack UPI & card payment gateway processing 1,000+ transactions at 99.8% uptime with a strict payment state machine (processing → success/failed).',
-      'Dockerized microservice architecture cut deployment setup by 70%; backend optimizations reduced API response time by 40% and tripled throughput under load.',
-    ],
-    features: [
-      'UPI & card payments',
-      'Strict payment state machine (processing → success / failed)',
-      'Dockerized microservice architecture',
-      'Backend optimizations for load',
-    ],
-    metrics: [
-      { value: '1,000+', label: 'transactions processed' },
-      { value: '99.8%', label: 'uptime' },
-      { value: '70%', label: 'less deployment setup' },
-      { value: '40%', label: 'faster API response' },
-      { value: '3×', label: 'throughput under load' },
-    ],
-    github: 'https://github.com/Sushmitadasari/Payment-gateway-system-Project',
-    palette: { from: '#1a0d02', via: '#8a4a07', to: '#0a0806', accent: '#ffb547' },
-    motif: 'flow',
-  },
-  {
-    id: 'multi-tenant-saas',
-    title: 'Multi-Tenant SaaS Platform',
-    year: '2026',
-    genre: 'SaaS • Security • DevOps',
-    logline: 'Shared-database multi-tenancy with strict tenant isolation and 4-level JWT/RBAC.',
-    stack: ['Node.js', 'React', 'PostgreSQL', 'Docker Compose'],
-    build: [
-      'Architected shared-database multi-tenancy for 50+ concurrent tenants with strict tenant_id isolation and 4-level JWT/RBAC, achieving zero unauthorized-access incidents across 200+ users.',
-      'Implemented Docker Compose one-command deployment, reducing environment setup time from 45 minutes to under 2 minutes.',
-    ],
-    features: [
-      'Shared-database multi-tenancy',
-      'Strict tenant_id isolation',
-      '4-level JWT / RBAC',
-      'One-command Docker Compose deployment',
-    ],
-    metrics: [
-      { value: '50+', label: 'concurrent tenants' },
-      { value: '200+', label: 'users' },
-      { value: '0', label: 'unauthorized-access incidents' },
-      { value: '45m → <2m', label: 'environment setup time' },
-    ],
-    github: 'https://github.com/Sushmitadasari/Multi-Tenant-SaaS-Platform',
     palette: { from: '#04121f', via: '#0f4c6e', to: '#05080d', accent: '#4cc9ff' },
-    motif: 'tenants',
+    motif: 'flow',
   },
 ];
 
@@ -179,194 +171,59 @@ export type Achievement = {
 };
 
 export const achievements: Achievement[] = [
-  {
-    id: 'algouniversity',
-    title: 'Tech Fellow',
-    org: 'AlgoUniversity',
-    detail: 'Selected through competitive national selection — advanced DSA, algorithm optimization, and competitive coding.',
-    laurel: 'National Selection',
-  },
-  {
-    id: 'flipkart-grid',
-    title: 'Semi-Finalist',
-    org: 'Flipkart GRiD 7.0',
-    detail: 'Competed among top national engineering talent.',
-    laurel: 'Semi-Finalist',
-    link: 'https://drive.google.com/file/d/16pXA2hssyJqlYMr27wfi6U4bjKDLvh9f/view?usp=drive_link',
-  },
-  {
-    id: 'branch-topper',
-    title: 'AIML Branch Topper',
-    org: 'B.Tech AI & ML',
-    detail: '9.24 SGPA for the semester.',
-    laurel: 'Branch Topper',
-  },
-  {
-    id: 'competitive-coding',
-    title: '850+ Problems Solved',
-    org: 'LeetCode • GFG • CodeChef',
-    detail: 'LeetCode: 350+ DSA problems (peak rating 1442). GFG: 300+ problems (rating 1436). CodeChef: 200+ problems.',
-    laurel: 'Competitive Coding',
-  },
-  {
-    id: 'hackerrank',
-    title: '5-Star Badges',
-    org: 'HackerRank',
-    detail: '5-star badges in C, Python, Java, and SQL.',
-    laurel: 'Four Languages',
-  },
+  { id: 'experience', title: '5+ Years', org: 'AWS DevOps', detail: 'Designing, automating, deploying and supporting scalable cloud infrastructure and production platforms.', laurel: 'Experience' },
+  { id: 'migration-engine', title: 'Migration Engine', org: 'Azure → AWS', detail: 'Automated enterprise VM migration workflows with AWS MGN, Step Functions, Lambda, EventBridge and DynamoDB.', laurel: 'Cloud Migration' },
+  { id: 'uptime', title: '99.9% Uptime', org: 'Production Platforms', detail: 'Built observability and operational practices with Site24x7, Datadog, CloudWatch, Prometheus and Grafana.', laurel: 'Reliability' },
+  { id: 'cost-optimization', title: '10–15% Lower Cost', org: 'AWS Optimization', detail: 'Optimized infrastructure and rightsized instances to reduce cloud spend while supporting production workloads.', laurel: 'Cost Control' },
+  { id: 'agentic-devops', title: 'Agentic DevOps', org: 'MCP + AI Agents', detail: 'Architected AI-assisted CI/CD modernization workflows that analyze Jenkinsfiles and surface migration blockers.', laurel: 'AI Automation' },
 ];
 
-export type Certification = { issuer: string; name: string; link: string };
+export type Certification = { issuer: string; name: string; detail: string; link?: string };
 
 export const certifications: Certification[] = [
-  { issuer: 'NPTEL', name: 'Database Management System', link: 'https://drive.google.com/file/d/1MqkJHchXeaGD4S8mzPmEGxEYddAsxAjN/view?usp=drive_link' },
-  { issuer: 'NPTEL', name: 'Fundamentals of Artificial Intelligence', link: 'https://drive.google.com/file/d/1GqyUQ-lrE-bHaN457t6fIdssgGG4HMXf/view?usp=drive_link' },
-  { issuer: 'NPTEL', name: 'Deep Learning', link: 'https://drive.google.com/file/d/1PWSRP5SQDPzkoTCF3A24eIJoSpTwgsff/view?usp=sharing' },
-  { issuer: 'AWS', name: 'AWS Certified AI Practitioner', link: 'https://drive.google.com/file/d/1h8e5p0a9T6f5gBaOP2ROfwWHZfkkspGn/view?usp=drive_link' },
-  { issuer: 'AWS', name: 'AWS Academy Graduate – Cloud Foundations', link: 'https://www.credly.com/badges/2d4810f9-3dbe-444d-99b9-61312ea5e7df/public_url' },
-  { issuer: 'MongoDB', name: 'MongoDB Certified Associate Developer', link: 'https://www.credly.com/badges/fd3362bd-743a-4c4d-a68e-b1fdc5d46811/public_url' },
-  { issuer: 'GitHub', name: 'GitHub Foundations', link: 'https://drive.google.com/file/d/1o0fkCAMRWTg1oMwxlqu6t6wnOpBv66Vq/view?usp=sharing' },
-  { issuer: 'Pearson', name: 'IT Specialist – HTML and CSS', link: 'https://www.credly.com/badges/e4a55298-e396-41d8-a032-283aafe9fab7/public_url' },
-  { issuer: 'Oracle', name: 'Java Certified Foundations Associate', link: 'https://drive.google.com/file/d/1g-yyceHtLg_k2RWiOIJqH0MMcGlaH90P/view?usp=sharing' },
-  { issuer: 'Oracle', name: 'Oracle Certified Foundations Associate – Database', link: 'https://drive.google.com/file/d/10-DzabbcH2vHrI6bAohoT8czKRZMa2kV/view?usp=drive_link' },
-  { issuer: 'Cisco', name: 'HTML Essentials', link: 'https://www.credly.com/badges/eb27ca95-3b2a-4948-bef9-0385d1d49055/public_url' },
-  { issuer: 'Cisco', name: 'CSS Essentials', link: 'https://www.credly.com/badges/3b37497f-6a61-4889-af3c-ed337a460a0b/public_url' },
-  { issuer: 'Cisco', name: 'JavaScript Essentials 1', link: 'https://www.credly.com/badges/9cdd4d55-6ecc-463f-b254-811ccdd0539c/public_url' },
-  { issuer: 'Cisco', name: 'JavaScript Essentials 2', link: 'https://www.credly.com/badges/0e1b036e-4318-4c8e-b750-2aca77314442/public_url' },
-  { issuer: 'Cisco', name: 'Python Essentials 1', link: 'https://www.credly.com/badges/0e21e3eb-d8ef-4770-95d7-dcbd6f8696b1/public_url' },
-  { issuer: 'Udemy', name: 'Microsoft Azure Hands-On Training (AZ-900, AZ-104, AZ-305)', link: 'https://drive.google.com/file/d/1KrXClhY0nJ3Acxs7DioNf4Q1rpaMvgPT/view?usp=sharing' },
+  { issuer: 'AWS', name: 'AWS Certified Solutions Architect – Associate', detail: 'Valid 18 March 2026 – 18 March 2029' },
+  { issuer: 'Claude', name: 'Claude Certified Architect – Foundations', detail: 'Valid 13 August 2026 – 13 August 2027' },
 ];
 
 export type Skill = { name: string; mono: string; note?: string };
 export type SkillCategory = { id: string; title: string; subtitle: string; skills: Skill[] };
 
+const skills = (items: string[]): Skill[] => items.map((name) => ({ name, mono: name.slice(0, 2) }));
+
 export const skillCategories: SkillCategory[] = [
-  {
-    id: 'languages',
-    title: 'Languages',
-    subtitle: 'Java is the primary language',
-    skills: [
-      { name: 'Java', mono: 'Jv', note: 'Primary' },
-      { name: 'Python', mono: 'Py' },
-      { name: 'C', mono: 'C' },
-      { name: 'C++', mono: 'C+' },
-    ],
-  },
-  {
-    id: 'frontend',
-    title: 'Frontend',
-    subtitle: 'Interfaces & the web platform',
-    skills: [
-      { name: 'React', mono: 'Re' },
-      { name: 'HTML', mono: 'Ht' },
-      { name: 'CSS', mono: 'Cs' },
-      { name: 'JavaScript', mono: 'Js' },
-    ],
-  },
-  {
-    id: 'backend',
-    title: 'Backend',
-    subtitle: 'Server-side logic',
-    skills: [
-      { name: 'Node.js', mono: 'No' },
-      { name: 'Express.js', mono: 'Ex' },
-    ],
-  },
-  {
-    id: 'infra',
-    title: 'Infra & Tools',
-    subtitle: 'Shipping & architecture',
-    skills: [
-      { name: 'Docker', mono: 'Dk' },
-      { name: 'Docker Compose', mono: 'Dc' },
-      { name: 'REST APIs', mono: 'Ap' },
-      { name: 'Microservices', mono: 'Ms' },
-      { name: 'JWT Auth', mono: 'Jw' },
-      { name: 'Git / GitHub', mono: 'Gt' },
-      { name: 'Postman', mono: 'Pm' },
-    ],
-  },
-  {
-    id: 'databases',
-    title: 'Databases',
-    subtitle: 'Indexing • Normalization',
-    skills: [
-      { name: 'PostgreSQL', mono: 'Pg' },
-      { name: 'MongoDB', mono: 'Mg' },
-      { name: 'MySQL', mono: 'My' },
-    ],
-  },
-  {
-    id: 'fundamentals',
-    title: 'CS Fundamentals',
-    subtitle: 'The foundations',
-    skills: [
-      { name: 'DSA', mono: 'Ds' },
-      { name: 'OS', mono: 'Os' },
-      { name: 'CN', mono: 'Cn' },
-      { name: 'DBMS', mono: 'Db' },
-      { name: 'OOPs', mono: 'Oo' },
-      { name: 'Collections', mono: 'Co' },
-      { name: 'Multithreading', mono: 'Mt' },
-    ],
-  },
-  {
-    id: 'interests',
-    title: 'Interests',
-    subtitle: 'Coming soon to the series',
-    skills: [
-      { name: 'System Design', mono: 'Sd' },
-      { name: 'Cloud Computing (AWS)', mono: 'Aw' },
-      { name: 'Machine Learning', mono: 'Ml' },
-    ],
-  },
+  { id: 'cloud', title: 'Cloud & AWS', subtitle: 'Infrastructure and managed services', skills: skills(['AWS', 'EC2', 'EKS', 'ECS', 'S3', 'RDS', 'VPC', 'IAM', 'Route 53', 'CloudFront', 'ECR', 'Lambda', 'Step Functions', 'EventBridge', 'DynamoDB', 'CloudWatch', 'Secrets Manager', 'Systems Manager', 'AWS MGN', 'NLB', 'ALB', 'Auto Scaling', 'AWS CLI']) },
+  { id: 'iac', title: 'Infrastructure as Code', subtitle: 'Repeatable cloud foundations', skills: skills(['Terraform', 'AWS CloudFormation']) },
+  { id: 'cicd', title: 'CI/CD & DevOps', subtitle: 'Build, release and quality', skills: skills(['Jenkins', 'GitHub Actions', 'Bitbucket Pipelines', 'Git', 'GitHub', 'Docker', 'Maven', 'SonarQube', 'Fortify']) },
+  { id: 'containers', title: 'Containers', subtitle: 'Orchestration and packaging', skills: skills(['Kubernetes', 'Amazon EKS', 'Amazon ECS', 'Docker', 'Helm']) },
+  { id: 'observability', title: 'Observability', subtitle: 'Signals for production systems', skills: skills(['Prometheus', 'Grafana', 'Site24x7', 'Datadog', 'CloudWatch']) },
+  { id: 'migration', title: 'Migration & Automation', subtitle: 'Runbooks and automation', skills: skills(['Azure-to-AWS Migration', 'AWS MGN', 'Migration Factory', 'VM Migration', 'Migration Runbooks', 'PowerShell', 'Bash', 'Python', 'Azure Run Command', 'WinRM', 'SSH']) },
+  { id: 'data-networking', title: 'Data & Networking', subtitle: 'Traffic, pipelines and storage', skills: skills(['Apache Kafka', 'Logstash', 'Elasticsearch', 'RabbitMQ', 'PostgreSQL', 'MySQL', 'TCP/IP', 'DNS', 'Firewall Rules', 'OSI Model']) },
+  { id: 'ai-platforms', title: 'AI & Platforms', subtitle: 'Modern operations surface', skills: skills(['Linux', 'Ubuntu', 'CentOS', 'Red Hat Enterprise Linux', 'Windows Server', 'Generative AI', 'Prompt Engineering', 'AWS Kiro', 'MCP', 'AI Agents', 'Agentic DevOps Automation', 'Apache', 'NGINX', 'IIS', 'Strapi CMS']) },
 ];
 
-/**
- * Factual cross-references shown when a skill card is hovered/tapped:
- * where the skill appears in the projects, certifications or achievements on the resume.
- */
 export const skillEvidence: Record<string, string[]> = {
-  Java: ['Oracle Java Certified Foundations Associate', 'HackerRank 5-star'],
-  Python: ['PolicyGuard AI', 'Cisco Python Essentials 1', 'HackerRank 5-star'],
-  C: ['HackerRank 5-star'],
-  React: ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  HTML: ['Pearson IT Specialist – HTML and CSS', 'Cisco HTML Essentials'],
-  CSS: ['Pearson IT Specialist – HTML and CSS', 'Cisco CSS Essentials'],
-  JavaScript: ['Cisco JavaScript Essentials 1 & 2'],
-  'Node.js': ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  'Express.js': ['Payment Gateway System'],
-  Docker: ['Payment Gateway System'],
-  'Docker Compose': ['Multi-Tenant SaaS Platform'],
-  'REST APIs': ['PolicyGuard AI'],
-  Microservices: ['Payment Gateway System'],
-  'JWT Auth': ['Multi-Tenant SaaS Platform'],
-  'Git / GitHub': ['GitHub Foundations'],
-  PostgreSQL: ['Payment Gateway System', 'Multi-Tenant SaaS Platform'],
-  MongoDB: ['MongoDB Certified Associate Developer'],
-  DBMS: ['NPTEL Database Management System', 'Oracle Database Foundations'],
-  DSA: ['AlgoUniversity Tech Fellow', '850+ problems solved'],
-  'Cloud Computing (AWS)': ['AWS Certified AI Practitioner', 'AWS Academy Cloud Foundations'],
-  'Machine Learning': ['B.Tech AI & ML', 'NPTEL Deep Learning'],
+  AWS: ['AWS Certified Solutions Architect – Associate', 'Dynamic Teletex'],
+  Terraform: ['Azure-to-AWS migration engine', 'EPAM Systems'],
+  Kubernetes: ['Amazon EKS production workloads', 'Dynamic Teletex'],
+  'Amazon EKS': ['Dynamic Teletex', 'Zen3 IT Solutions'],
+  Jenkins: ['CI/CD modernization platform', 'Cigniti Technologies'],
+  'GitHub Actions': ['Migration engine', 'CI/CD modernization platform'],
+  Docker: ['Dynamic Teletex', 'Amazon EKS workloads'],
+  Python: ['Lambda validation workflows', 'AWS automation'],
+  Bash: ['AWS MGN agent installation', 'Migration runbooks'],
+  'AWS MGN': ['Azure-to-AWS migration engine', 'Migration runbooks'],
+  'Step Functions': ['Sequential migration orchestration', 'EPAM Systems'],
+  'Apache Kafka': ['Dynamic Teletex real-time ingestion'],
+  Elasticsearch: ['Dynamic Teletex structured search'],
+  RabbitMQ: ['Dynamic Teletex asynchronous communication'],
+  Prometheus: ['Kubernetes observability', 'Amazon monitoring dashboards'],
+  Grafana: ['Kubernetes observability', 'Amazon monitoring dashboards'],
+  'Generative AI': ['AI-driven CI/CD modernization platform'],
+  MCP: ['AI-driven CI/CD modernization platform'],
 };
 
-export type Episode = {
-  code: string;
-  title: string;
-  description: string;
-  tags: string[];
-  runtime: string;
-  palette: Palette;
-};
-
-export type Season = {
-  number: number;
-  title: string;
-  period: string;
-  synopsis: string;
-  episodes: Episode[];
-};
+export type Episode = { code: string; title: string; description: string; tags: string[]; runtime: string; palette: Palette };
+export type Season = { number: number; title: string; period: string; synopsis: string; episodes: Episode[] };
 
 const crimson: Palette = { from: '#24060b', via: '#6e0d1d', to: '#09070a', accent: '#ff3d5a' };
 const amber: Palette = { from: '#1c1003', via: '#6b3c06', to: '#0a0806', accent: '#ffb547' };
@@ -377,238 +234,98 @@ const jade: Palette = { from: '#03150f', via: '#0d5a40', to: '#050a08', accent: 
 export const seasons: Season[] = [
   {
     number: 1,
-    title: 'The Beginning',
-    period: '2021 – 2023',
-    synopsis: 'Intermediate years at Sri Chaitanya Junior College, Kakinada — Mathematics, Physics and Chemistry.',
-    episodes: [
-      {
-        code: 'S01 E01',
-        title: 'The Foundation',
-        description: 'BIEAP, MPC at Sri Chaitanya Junior College, Kakinada — finishing with a score of 925/1000.',
-        tags: ['MPC', 'BIEAP'],
-        runtime: 'Jun 2021 – May 2023',
-        palette: amber,
-      },
-    ],
+    title: 'The Foundation',
+    period: '2020',
+    synopsis: 'B.Tech in Electronics and Telecommunication Engineering from Biju Patnaik University of Technology, Odisha.',
+    episodes: [{ code: 'S01 E01', title: 'The Engineer', description: 'B.Tech — Electronics and Telecommunication Engineering, BPUT, Odisha.', tags: ['B.Tech', 'BPUT', 'Odisha'], runtime: '2020', palette: violet }],
   },
   {
     number: 2,
-    title: 'Enter: AI & ML',
-    period: '2023 – Present',
-    synopsis: 'B.Tech in Artificial Intelligence and Machine Learning at Aditya Engineering College, Surampalem.',
+    title: 'Cloud Beginnings',
+    period: '2021 – 2022',
+    synopsis: 'AWS infrastructure, automation and observability begin at Amazon.',
     episodes: [
-      {
-        code: 'S02 E01',
-        title: 'The Engineer',
-        description: 'Bachelor of Technology in Artificial Intelligence and Machine Learning — CGPA 9.10.',
-        tags: ['B.Tech', 'AI & ML', 'CGPA 9.10'],
-        runtime: 'Oct 2023 – Present',
-        palette: violet,
-      },
-      {
-        code: 'S02 E02',
-        title: 'The Topper',
-        description: 'AIML Branch Topper with a 9.24 SGPA for the semester.',
-        tags: ['9.24 SGPA', 'Branch Topper'],
-        runtime: 'One semester',
-        palette: crimson,
-      },
-      {
-        code: 'S02 E03',
-        title: 'The Problem Solver',
-        description: 'LeetCode 350+ (peak 1442), GFG 300+ (1436), CodeChef 200+ and HackerRank 5-star badges in C, Python, Java and SQL.',
-        tags: ['DSA', 'LeetCode', 'GFG', 'CodeChef', 'HackerRank'],
-        runtime: '850+ problems',
-        palette: jade,
-      },
+      { code: 'S02 E01', title: 'The Intern', description: 'Automated AWS infrastructure with CloudFormation and AWS CLI; designed EC2 architectures for high availability and security.', tags: ['AWS', 'CloudFormation', 'EC2'], runtime: 'Aug 2021 – Mar 2022', palette: amber },
+      { code: 'S02 E02', title: 'The Automator', description: 'Built Lambda functions and monitoring dashboards with Prometheus and Grafana, while sharing cloud knowledge with team members.', tags: ['Lambda', 'Prometheus', 'Grafana'], runtime: 'Amazon', palette: jade },
     ],
   },
   {
     number: 3,
-    title: 'Learning to Build',
-    period: '2025 – 2026',
-    synopsis: 'One year of intensive Full-Stack Development training as a Trainee at Technical Hub Pvt Ltd.',
+    title: 'Production Systems',
+    period: '2022 – 2026',
+    synopsis: 'Containerized applications, Kubernetes operations, CI/CD and production support across Cigniti Technologies and Zen3 IT Solutions.',
     episodes: [
-      {
-        code: 'S03 E01',
-        title: 'The Trainee',
-        description: 'Intensive Full-Stack Development training covering frontend, backend, database integration and deployment workflows.',
-        tags: ['FSD', 'Frontend', 'Backend', 'Databases'],
-        runtime: 'May 2025 – Jun 2026',
-        palette: ocean,
-      },
-      {
-        code: 'S03 E02',
-        title: 'The Developer',
-        description: 'Developed responsive web applications — user interfaces, server-side logic and database connectivity.',
-        tags: ['React', 'Node.js', 'Express.js'],
-        runtime: 'Technical Hub',
-        palette: violet,
-      },
-      {
-        code: 'S03 E03',
-        title: 'The Deployer',
-        description: 'Deployed and managed web applications with version control, debugging and end-to-end development practices.',
-        tags: ['Git / GitHub', 'Deployment'],
-        runtime: 'Technical Hub',
-        palette: jade,
-      },
+      { code: 'S03 E01', title: 'The Operator', description: 'Containerized microservices, operated ECS and EKS workloads, and implemented Kubernetes observability with Istio, Prometheus and Grafana.', tags: ['Docker', 'ECS', 'EKS'], runtime: 'Mar 2022 – Sep 2023', palette: ocean },
+      { code: 'S03 E02', title: 'The Platform Engineer', description: 'Built CI/CD pipelines, Kafka ingestion, Logstash and Elasticsearch integrations, secure secret retrieval and production observability.', tags: ['Jenkins', 'Kafka', 'Datadog'], runtime: 'Apr 2024 – Jan 2026', palette: amber },
     ],
   },
   {
     number: 4,
-    title: 'Building Real Products',
-    period: '2026',
-    synopsis: 'Three Originals — an AI platform, a payment gateway and a multi-tenant SaaS — plus national-level recognition.',
+    title: 'Migration & Agents',
+    period: '2026 – Present',
+    synopsis: 'Enterprise cloud migration automation and AI-driven CI/CD modernization at EPAM Systems.',
     episodes: [
-      {
-        code: 'S04 E01',
-        title: 'The AI Builder',
-        description: 'PolicyGuard AI — LLM-based Q&A and key-information extraction across 500+ policy documents at 92% accuracy.',
-        tags: ['Python', 'NLP', 'LLM'],
-        runtime: '2026',
-        palette: crimson,
-      },
-      {
-        code: 'S04 E02',
-        title: 'The Architect',
-        description: 'Payment Gateway System and Multi-Tenant SaaS Platform — state machines, microservices, tenant isolation and RBAC.',
-        tags: ['Node.js', 'PostgreSQL', 'Docker'],
-        runtime: '2026',
-        palette: amber,
-      },
-      {
-        code: 'S04 E03',
-        title: 'The Fellow',
-        description: 'Selected as a Tech Fellow at AlgoUniversity and reached the Semi-Finals of Flipkart GRiD 7.0.',
-        tags: ['AlgoUniversity', 'Flipkart GRiD 7.0'],
-        runtime: 'National stage',
-        palette: ocean,
-      },
+      { code: 'S04 E01', title: 'The Migration Engine', description: 'Orchestrated Azure-to-AWS and VMware-to-AWS VM migrations with AWS MGN, Step Functions, Lambda, EventBridge and DynamoDB.', tags: ['AWS MGN', 'Step Functions', 'Terraform'], runtime: 'January 2026 – Present', palette: crimson },
+      { code: 'S04 E02', title: 'The Agent Architect', description: 'Architected MCP and specialized AI agents to analyze Jenkinsfiles and automate CI/CD modernization to GitHub Actions and GitLab CI.', tags: ['MCP', 'AI Agents', 'CI/CD'], runtime: 'EPAM Systems', palette: violet },
     ],
   },
   {
     number: 5,
-    title: "What's Next",
-    period: 'Now streaming',
-    synopsis: 'The interests on the resume point to the next arc of the story.',
-    episodes: [
-      {
-        code: 'S05 E01',
-        title: 'The Next Chapter',
-        description: 'Exploring System Design, Cloud Computing (AWS) and Machine Learning.',
-        tags: ['System Design', 'AWS', 'Machine Learning'],
-        runtime: 'In production',
-        palette: violet,
-      },
-    ],
+    title: 'Dynamic Teletex',
+    period: 'Key project',
+    synopsis: 'An AWS-based travel and booking platform built for resilient, observable, zero-downtime delivery.',
+    episodes: [{ code: 'S05 E01', title: 'The Travel Platform', description: 'Supported EKS and Docker microservices, Kafka data pipelines, Elasticsearch search, RabbitMQ communication, secure runtime secrets and global delivery.', tags: ['EKS', 'Kafka', 'Elasticsearch'], runtime: 'AWS Platform', palette: ocean }],
   },
 ];
 
 export type TopPick = { label: string; title: string; detail: string; palette: Palette };
 
 export const topPicks: TopPick[] = [
-  { label: 'Primary language', title: 'Java', detail: 'Listed as primary on the resume • Oracle certified', palette: amber },
-  { label: 'The AI Original', title: 'PolicyGuard AI', detail: '500+ documents • 92% accuracy', palette: crimson },
-  { label: 'Biggest stage', title: 'Flipkart GRiD 7.0', detail: 'Semi-Finalist', palette: ocean },
-  { label: 'National selection', title: 'AlgoUniversity', detail: 'Tech Fellow', palette: violet },
-  { label: 'Academic high', title: 'Branch Topper', detail: '9.24 SGPA in AI & ML', palette: jade },
-  { label: 'Cloud credential', title: 'AWS AI Practitioner', detail: 'AWS Certified', palette: amber },
-  { label: 'Problems solved', title: '850+', detail: 'LeetCode 350+ • GFG 300+ • CodeChef 200+', palette: crimson },
-  { label: 'The training arc', title: '1 Year of FSD', detail: 'Technical Hub Pvt Ltd', palette: ocean },
-  { label: 'Database credential', title: 'MongoDB', detail: 'Certified Associate Developer', palette: jade },
-  { label: 'Current focus', title: 'System Design', detail: 'with Cloud (AWS) & Machine Learning', palette: violet },
+  { label: 'The headline', title: 'AWS DevOps', detail: '5+ years across cloud, automation and production platforms', palette: crimson },
+  { label: 'The migration arc', title: 'Azure → AWS', detail: 'AWS MGN, Step Functions, Lambda and Terraform', palette: ocean },
+  { label: 'The production stack', title: 'EKS + Docker', detail: 'Containerized workloads with Kubernetes orchestration', palette: violet },
+  { label: 'The key project', title: 'Dynamic Teletex', detail: 'AWS-based travel and booking platform', palette: amber },
+  { label: 'The data stream', title: 'Kafka', detail: 'Real-time ingestion behind a Network Load Balancer', palette: jade },
+  { label: 'The reliability signal', title: '99.9%', detail: 'Application uptime supported by observability', palette: ocean },
+  { label: 'The efficiency win', title: '10–15%', detail: 'AWS cost reduction through optimization and rightsizing', palette: jade },
+  { label: 'The agent layer', title: 'MCP + AI', detail: 'CI/CD modernization with specialized AI agents', palette: violet },
+  { label: 'The credential', title: 'AWS SAA', detail: 'AWS Certified Solutions Architect – Associate', palette: amber },
+  { label: 'The current mission', title: 'Platform Engineering', detail: 'Migration, reliability and agentic automation', palette: crimson },
 ];
 
-/** Slides for the "▶ Play Intro" cinematic sequence. */
 export type IntroSlide = { kicker: string; title: string; lines: string[]; chips?: string[] };
 
 export const introSlides: IntroSlide[] = [
+  { kicker: 'Education', title: 'B.Tech · E&TC', lines: ['Biju Patnaik University of Technology, Odisha', '2020'] },
+  { kicker: 'Experience', title: '5+ years in DevOps', lines: ['AWS cloud engineering · CI/CD · Kubernetes', 'Production support · Observability · Cost optimization'], chips: ['AWS', 'Terraform', 'Kubernetes'] },
   {
-    kicker: 'Education',
-    title: 'B.Tech · AI & ML',
-    lines: ['Aditya Engineering College, Surampalem', 'October 2023 – Present'],
-    chips: ['CGPA 9.10'],
+    kicker: 'Cloud transformation',
+    title: 'Cloud Migration, Automated',
+    lines: ['Azure + VMware → AWS', 'Repeatable, validated and production-ready migration workflows'],
+    chips: ['AWS MGN', 'Step Functions', 'Lambda', 'EventBridge'],
   },
-  {
-    kicker: 'Skills',
-    title: 'Java first.',
-    lines: ['Python, C, C++ · React, Node.js, Express.js', 'PostgreSQL, MongoDB, MySQL · Docker, REST, JWT'],
-    chips: ['Java', 'Python', 'React', 'Node.js', 'Docker', 'PostgreSQL'],
-  },
-  {
-    kicker: 'Training',
-    title: 'The Training Arc',
-    lines: ['One year of intensive Full‑Stack Development training', 'Trainee · Technical Hub Pvt Ltd · May 2025 – June 2026', 'Frontend · Backend · Databases · Deployment'],
-  },
-  {
-    kicker: 'Projects',
-    title: 'Three Originals',
-    lines: ['PolicyGuard AI — 500+ documents, 92% accuracy', 'Payment Gateway — 1,000+ transactions, 99.8% uptime', 'Multi-Tenant SaaS — 50+ tenants, zero unauthorized access'],
-  },
-  {
-    kicker: 'Achievements',
-    title: 'Top Moments',
-    lines: ['Tech Fellow — AlgoUniversity', 'Semi-Finalist — Flipkart GRiD 7.0', 'AIML Branch Topper — 9.24 SGPA'],
-  },
-  {
-    kicker: 'Certified',
-    title: '16 Certifications',
-    lines: ['AWS · MongoDB · Oracle · GitHub · Pearson', 'NPTEL · Cisco · Udemy'],
-  },
-  {
-    kicker: 'Current mission',
-    title: 'Now exploring',
-    lines: ['System Design · Cloud Computing (AWS) · Machine Learning'],
-  },
+  { kicker: 'Project', title: 'Dynamic Teletex', lines: ['AWS-based travel and booking platform', 'EKS · Kafka · Elasticsearch · RabbitMQ · zero-downtime delivery'] },
+  { kicker: 'Modernization', title: 'Agents in the pipeline', lines: ['MCP and specialized AI agents analyze Jenkinsfiles', 'Migration to GitHub Actions and GitLab CI'] },
+  { kicker: 'Certified', title: 'Two credentials', lines: ['AWS Certified Solutions Architect – Associate', 'Claude Certified Architect – Foundations'] },
+  { kicker: 'Current mission', title: 'Now building', lines: ['Repeatable migration workflows · reliable platforms', 'AI-assisted and agent-driven DevOps automation'] },
 ];
 
-export type ProfileId = 'sushmita' | 'recruiter' | 'developer' | 'creative';
+export type ProfileId = 'jasmini' | 'recruiter' | 'developer' | 'creative';
 export type SectionId = 'about' | 'journey' | 'originals' | 'picks' | 'skills' | 'moments' | 'story';
 
-export const viewerProfiles: {
-  id: ProfileId;
-  name: string;
-  blurb: string;
-  color: string;
-  order: SectionId[];
-}[] = [
-  {
-    id: 'sushmita',
-    name: 'Sushmita',
-    blurb: 'The full series, in order',
-    color: '#e5132b',
-    order: ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'],
-  },
-  {
-    id: 'recruiter',
-    name: 'Recruiter',
-    blurb: 'Resume, achievements & skills first',
-    color: '#4cc9ff',
-    order: ['story', 'moments', 'skills', 'originals', 'about', 'journey', 'picks'],
-  },
-  {
-    id: 'developer',
-    name: 'Developer',
-    blurb: 'Projects, stack & GitHub first',
-    color: '#46e3a8',
-    order: ['originals', 'skills', 'journey', 'moments', 'about', 'picks', 'story'],
-  },
-  {
-    id: 'creative',
-    name: 'Creative',
-    blurb: 'The story arc & highlights first',
-    color: '#ffb547',
-    order: ['journey', 'picks', 'originals', 'moments', 'about', 'skills', 'story'],
-  },
+export const viewerProfiles: { id: ProfileId; name: string; blurb: string; color: string; order: SectionId[] }[] = [
+  { id: 'jasmini', name: 'Jasmini', blurb: 'The full series, in order', color: '#e5132b', order: ['about', 'journey', 'originals', 'picks', 'skills', 'moments', 'story'] },
+  { id: 'recruiter', name: 'Recruiter', blurb: 'Resume, experience & certifications first', color: '#4cc9ff', order: ['story', 'moments', 'skills', 'originals', 'about', 'journey', 'picks'] },
+  { id: 'developer', name: 'Platform Engineer', blurb: 'Cloud, migration & delivery first', color: '#46e3a8', order: ['originals', 'skills', 'journey', 'moments', 'about', 'picks', 'story'] },
+  { id: 'creative', name: 'Creative', blurb: 'The story arc & highlights first', color: '#ffb547', order: ['journey', 'picks', 'originals', 'moments', 'about', 'skills', 'story'] },
 ];
 
 export const sectionMeta: Record<SectionId, { nav: string; card: string; meta: string; palette: Palette }> = {
-  about: { nav: 'About', card: 'About Me', meta: 'The Pilot • Education & training', palette: violet },
+  about: { nav: 'About', card: 'About Me', meta: 'The Pilot • Education & experience', palette: violet },
   journey: { nav: 'Journey', card: 'My Journey', meta: `${seasons.length} Seasons • ${seasons.reduce((n, s) => n + s.episodes.length, 0)} Episodes`, palette: amber },
-  originals: { nav: 'Originals', card: 'My Projects', meta: `${projects.length} Originals • 2026`, palette: crimson },
+  originals: { nav: 'Originals', card: 'My Project', meta: `${projects.length} Original • Dynamic Teletex`, palette: ocean },
   picks: { nav: 'Top Picks', card: 'Top Picks', meta: 'Top 10 from the resume', palette: jade },
   skills: { nav: 'Skills', card: 'My Skills', meta: `${skillCategories.length} Categories`, palette: ocean },
-  moments: { nav: 'Moments', card: 'My Achievements', meta: `${achievements.length} Moments • ${certifications.length} Certifications`, palette: crimson },
+  moments: { nav: 'Moments', card: 'Top Moments', meta: `${achievements.length} Moments • ${certifications.length} Certifications`, palette: crimson },
   story: { nav: 'Resume', card: 'The Full Story', meta: 'Resume • View & download', palette: violet },
 };

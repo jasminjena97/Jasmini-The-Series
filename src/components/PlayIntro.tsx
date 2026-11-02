@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion, useMotionValue } from 'framer-motion';
 import { introSlides, profile } from '../data/portfolio';
 import { useScrollLock } from '../hooks/smoothScroll';
@@ -17,7 +17,29 @@ export default function PlayIntro({ onClose }: { onClose: () => void }) {
   const [phase, setPhase] = useState<'zoom' | 'reel' | 'end'>(reduced ? 'reel' : 'zoom');
   const [index, setIndex] = useState(0);
   const [paused, setPaused] = useState(false);
+  const musicRef = useRef<HTMLAudioElement>(null);
   const progress = useMotionValue(0);
+
+  useEffect(() => {
+    const music = musicRef.current;
+    if (!music) return;
+    music.volume = 0.22;
+    void music.play().catch(() => undefined);
+    return () => {
+      music.pause();
+      music.currentTime = 0;
+    };
+  }, []);
+
+  useEffect(() => {
+    const music = musicRef.current;
+    if (!music) return;
+    if (paused) {
+      music.pause();
+    } else {
+      void music.play().catch(() => undefined);
+    }
+  }, [paused]);
 
   useEffect(() => {
     if (phase !== 'zoom') return;
@@ -92,6 +114,8 @@ export default function PlayIntro({ onClose }: { onClose: () => void }) {
       aria-modal="true"
       aria-label="Intro highlight reel"
     >
+      <audio ref={musicRef} src="/assets/intro-music.mp3" loop preload="auto" aria-hidden="true" />
+
       {/* Zoom into the portrait */}
       <motion.div
         className="absolute inset-0 flex items-end justify-center"
